@@ -1,3 +1,21 @@
+ local notification = Instance.new("Sound")
+notification.Parent = game:GetService("SoundService")
+notification.SoundId = "rbxassetid://9086208751"
+notification.Volume = 10
+
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Blue Hub99", 
+      Text = "Execute";
+})
+wait(2)
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Blue Hub", 
+      Text = "Execute";
+notification:Play()
+})
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Blue Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Novenov",IntroText = "Blue Hub"})
 
